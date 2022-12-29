@@ -22,7 +22,7 @@ namespace bizland
             {
                 endpoints.MapControllerRoute(
                   name: "areas",
-                  pattern: "{area:exists}/{controller=Hero}/{action=Index}/{id?}"
+                  pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
                 );
             });
             app.MapControllerRoute(

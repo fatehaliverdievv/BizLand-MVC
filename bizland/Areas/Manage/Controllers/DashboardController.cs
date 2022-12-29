@@ -2,7 +2,8 @@
 
 namespace bizland.Areas.Manage.Controllers
 {
-    public class HeroController : Controller
+    [Area("Manage")]
+    public class DashboardController : Controller
     {
         public IActionResult Index()
         {

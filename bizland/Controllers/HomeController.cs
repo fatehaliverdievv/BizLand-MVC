@@ -16,7 +16,9 @@ namespace bizland.Controllers
         public IActionResult Index()
         {
                 List<Employee> employee = _context.Employees.ToList();
-                return View(employee);
+                List<FeaturedService> services= _context.FeaturedService.ToList();
+            ViewBag.Service = services;
+            return View(employee);
         }
     }
 }
